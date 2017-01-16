@@ -107,5 +107,31 @@ so ideally we can do something like this :
 ItemDisplay[CL1 !ETH NMAG (SK245>0 OR SK250>0 OR SK226>0) (SOCK=0 OR SOCK=2 OR SOCK=3)]:.. Not sure if this would work. ideally this code represents.. show me any pelt that is white only (hide eths) with skills tornado, or hurricane, or oak sage greater than 0, and it must have either sockets 0,2,3.
 
 
+///////////////////////////////////////////////
+//////grand matron bows & Matriarchal Bow//////
+///////////////////////////////////////////////
 
+Current code:
 
+//Matriarchal Bow// Shows 0 or 4 socket with +2bow and crossbow skills (ETH/nonETH, but bows dont drop ETH). Shows uniques and sets, hides all rares and blues.
+ItemDisplay[amb NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[amb (SET OR UNI)]: %NAME%
+ItemDisplay[amb (RARE OR MAG)]:
+
+//Grand Matron Bow// Shows 0 or 4 socket with +2bow and crossbow skills (ETH/nonETH, but bows dont drop ETH). Shows uniques and sets, hides all rares and blues.
+ItemDisplay[amc NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[amc (SET OR UNI)]: %NAME%
+ItemDisplay[amc (RARE OR MAG)]:
+
+Problem : using wrong code?
+
+Below is what is mentioned to use. Says to use CLSK code. CLSK0 is amazon.
+
+Class Skills
+
+Find the number of the class from this page: class list; next, append that number to "CLSK". This will match grand matron bows with +2/+3 to amazon skills (class number 0 from the list):
+
+ItemDisplay[amc CLSK0>1]: ...
+
+Have to further test bows. I thought class skills is +2 amazon and tab skills is +2 amazon bow skills..
+Ingame shows bow and cross skills is a skill tab, so I'm sure that TABSK is the correct method to use.
