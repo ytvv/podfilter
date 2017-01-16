@@ -1,0 +1,277 @@
+﻿//created by ytv
+//discord : ytv#5924
+//reddit : /u/ytvvvv
+
+//Hide Gold Piles (<) 2000
+ItemDisplay[GOLD<2000]:
+
+//Utility - shows stamina pots if your character is lower than level 30. shows them after 30. same goes for keys. hides other utility pots.
+ItemDisplay[vps CLVL<30]: %GREEN%Stamina
+ItemDisplay[vps CLVL>30]:
+ItemDisplay[key CLVL<30]: %GREEN%Key
+ItemDisplay[key CLVL>30]:
+ItemDisplay[yps]:
+ItemDisplay[rvs]:
+ItemDisplay[rvl]: %PURPLE%*%WHITE%Rejuv
+ItemDisplay[wms]:
+
+//Throwing Pots - hides all throwing pots.
+ItemDisplay[gps]:
+ItemDisplay[ops]:
+ItemDisplay[gpm]:
+ItemDisplay[opm]:
+ItemDisplay[gpl]:
+ItemDisplay[opl]:
+
+//TPS&IDS - Shows tp book if your character is below level 30. Hides it if you are higher than level 30. (Same goes for tp scrolls and id scrolls / id books)
+
+ItemDisplay[tbk CLVL<30]: %DGREEN%TP Book
+ItemDisplay[tbk CLVL>30]:
+ItemDisplay[ibk CLVL<30]: %DGREEN%ID Book
+ItemDisplay[ibk CLVL>30]:
+ItemDisplay[tsc CLVL<30]: %DGREEN%TP
+ItemDisplay[tsc CLVL>30]:
+ItemDisplay[isc CLVL<30]: %DGREEN%ID
+ItemDisplay[isc CLVL>30]:
+
+//PVP - Ears - hides ears in pvp (for softcore bros)
+ItemDisplay[ear]:
+
+//Gems - Displays only Flawless gems. other gems chipped etc still show, but they dont drop at all or not often in hell mode.
+ItemDisplay[gzv]:%PURPLE%*%WHITE%FAmy
+ItemDisplay[gly]:%YELLOW%*%WHITE%FTopaz
+ItemDisplay[glb]:%BLUE%*%WHITE%FSaphire
+ItemDisplay[glg]:%GREEN%*%WHITE%FEmerald
+ItemDisplay[glr]:%RED%*%WHITE%FRuby
+ItemDisplay[glw]:%GRAY%*%WHITE%FDiamond
+
+//Pots // Shows tier of pots 1-3, hides tier 4 pot, shows tier 5. Can be fixed up a little bit with CLVL, but less & minor pots dont really drop in hell mode anyways.
+ItemDisplay[hp1]:%RED%*%WHITE%H1
+ItemDisplay[hp2]:%RED%*%WHITE%H2
+ItemDisplay[hp3]:%RED%*%WHITE%H3
+ItemDisplay[hp4]:
+ItemDisplay[hp5]:%RED%*%WHITE%H5
+ItemDisplay[mp1]:%BLUE%*%WHITE%M1
+ItemDisplay[mp2]:%BLUE%*%WHITE%M2
+ItemDisplay[mp3]:%BLUE%*%WHITE%M3
+ItemDisplay[mp4]:
+ItemDisplay[mp5]:%BLUE%*%WHITE%M5
+
+//Skulls - hides all skulls (I dont know any reason to pick up skulls)
+ItemDisplay[skc]:
+ItemDisplay[skf]:
+ItemDisplay[sku]:
+ItemDisplay[skl]:
+ItemDisplay[skz]:
+
+//SmallCharms - displays ILVL for all small charms
+ItemDisplay[cm1]: %NAME% {L%ILVL%}
+
+//LargeCharms - hides large charms unless it is ilvl 99, so that you can see torch
+ItemDisplay[cm2 ILVL=99]: %NAME% {L%ILVL%}
+ItemDisplay[cm2]:
+
+//GrandCharms - displays ILVL for all grand charm
+ItemDisplay[cm3]: %NAME% {L%ILVL%}
+
+//Runes Low Tier - displays low tier runes with orange * then the rune name in white.
+ItemDisplay[r01]:%ORANGE%*%WHITE%EL[1]
+ItemDisplay[r02]:%ORANGE%*%WHITE%ELD[2]
+ItemDisplay[r03]:%ORANGE%*%WHITE%TIR[3]
+ItemDisplay[r04]:%ORANGE%*%WHITE%NEF[4]
+ItemDisplay[r05]:%ORANGE%*%WHITE%ETH[5]
+ItemDisplay[r06]:%ORANGE%*%WHITE%ITH[6]
+ItemDisplay[r07]:%ORANGE%*%WHITE%TAL[7]
+ItemDisplay[r08]:%ORANGE%*%WHITE%RAL[8]
+ItemDisplay[r09]:%ORANGE%*%WHITE%ORT[8]
+ItemDisplay[r10]:%ORANGE%*%WHITE%THUL[10]
+ItemDisplay[r11]:%ORANGE%*%WHITE%AMN[11]
+ItemDisplay[r13]:%ORANGE%*%WHITE%SHAEL[13]
+
+//Runes Mid Tier - displays mid tier runes in orange with * then the rune name
+ItemDisplay[r12]:%ORANGE%*SOL[12]
+ItemDisplay[r14]:%ORANGE%*DOL[14]
+ItemDisplay[r15]:%ORANGE%*HEL[15]
+ItemDisplay[r16]:%ORANGE%*IO[16]
+ItemDisplay[r17]:%ORANGE%*LUM[17]
+ItemDisplay[r18]:%ORANGE%*KO[18]
+ItemDisplay[r19]:%ORANGE%*FAL[19]
+ItemDisplay[r20]:%ORANGE%*LEM[20]
+ItemDisplay[r21]:%ORANGE%*PUL[21]
+ItemDisplay[r22]:%ORANGE%*UM[22]
+
+//Runes High Tier - Displays all high tier runes with organge dot and then red text for the rune name. keep in mind MAL, GUL, IST are not HRS. You can get them from the hellforge.
+
+ItemDisplay[r23]:%ORANGE%*%RED%MAL[23]
+ItemDisplay[r24]:%ORANGE%*%RED%IST[24]
+ItemDisplay[r25]:%ORANGE%*%RED%GUL[25]
+ItemDisplay[r26]:%ORANGE%*%RED%VEX[26]
+ItemDisplay[r27]:%ORANGE%*%RED%OHM[27]
+ItemDisplay[r28]:%ORANGE%*%RED%LO[28]
+ItemDisplay[r29]:%ORANGE%*%RED%SUR[29]
+ItemDisplay[r30]:%ORANGE%*%RED%BER[30]
+ItemDisplay[r31]:%ORANGE%*%RED%JAH[31]
+ItemDisplay[r32]:%ORANGE%*%RED%CHAM[32]
+ItemDisplay[r33]:%ORANGE%*%RED%ZOD[33]
+
+
+/////RuneWords *START*//////
+
+//HOTO//CTA = flail = Shows 0,4,5 eth/white flails. Shows SET and UNI eth/noneth. Hides RARE and MAG.
+ItemDisplay[fla ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[fla NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[fla (SET OR UNI)]: %NAME%
+ItemDisplay[fla (RARE OR MAG)]:
+
+//Spirit - crystal sword - shows 0,4,5 socket eth/white. Shows uni / set eth/noneth. Hides RARE and MAG
+ItemDisplay[crs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[crs NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[crs (SET OR UNI)]: %NAME%
+ItemDisplay[crs (RARE OR MAG)]:
+
+//Spirit - monarch - Will show 0,4 socket eth/noneth. Displays set and uni eth/noneth. Hides RARE and MAG.
+ItemDisplay[uit !ETH NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[uit (SET OR UNI)]: %NAME%
+ItemDisplay[uit (RARE OR MAG)]:
+
+//ONLY ELT polearms - Shows 0,4,5 socket eth/white. Shows set or uni eth/noneth. Hides RARE and MAG.
+ItemDisplay[ELT WP8 ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[ELT WP8 NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[ELT WP8 (SET OR UNI)]: %NAME%
+ItemDisplay[ELT WP8 (RARE OR MAG)]:
+
+//Doom/Grief/Breath of the Dying/Beast/LastWish - Berserker Axe - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides all RARE and MAG.
+ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[7wa (SET OR UNI)]: %NAME%
+ItemDisplay[7wa (RARE OR MAG)]:
+
+//Breath of the Dying/LastWish/Grief - PhaseBlade - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides RARE and MAG
+ItemDisplay[7cr ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[7cr NMAG (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[7cr (SET OR UNI)]: %NAME%
+ItemDisplay[7cr (RARE OR MAG)]:
+
+
+/////RuneWords *END*//////
+
+//Dusk Shroud - Will only show 4 open sockets & 0 sockets. Hides 1-3 sockets. Still Shows ETH, SET, AND UNI. Hides all rares and blues.
+ItemDisplay[uui ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[uui NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[uui (SET OR UNI)]: %NAME%
+ItemDisplay[uui (RARE OR MAG)]:
+
+//Archon Plate - Will only show 4 open sockets & 0 sockets. Hides 1-3 sockets. Still Shows ETH, SET, AND UNI. Hides all rares and blues.
+ItemDisplay[utp ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[utp NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[utp (SET OR UNI)]: %NAME%
+ItemDisplay[utp (RARE OR MAG)]:
+
+//Mage Plate - Will only show 3os & 0 sockets. Hides 1-3 sockets. Still Shows ETH, SET, AND UNI. Hides all rares and blues.
+ItemDisplay[xtp ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[xtp NMAG (SOCK=0 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[xtp (SET OR UNI)]: %NAME%
+ItemDisplay[xtp (RARE OR MAG)]:
+
+//Helms//
+
+//Circlets// - Shows only RARE, SET, AND UNIQUE
+ItemDisplay[EQ7 (RARE OR UNI OR SET)]:%NAME%
+
+//Druid Pelt// -Shows non-eth 0, 2, or 3 socket. Displays RARE, SET, UNIQUE.
+ItemDisplay[CL1 !ETH NMAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[CL1 (RARE OR UNI OR SET)]:%NAME%
+
+//Barbarian helmets// -Shows only RARE, SET, AND UNIQUE
+ItemDisplay[CL2 (RARE OR UNI OR SET)]:%NAME%
+
+//Class Specific Weapons//
+
+//Assassin Claws//
+
+//Greater Talons//Shows MAG, RARE, UNI OR SET. We want to see this due to +3 to sin traps and +40 to attack speed. Mag or RARE can roll this.
+ItemDisplay[9tw (MAG OR RARE OR UNI OR SET)]:%NAME%
+
+//Runic Talons//Shows MAG, RARE, UNI OR SET. We want to see this due to +3 to sin traps and +40 to attack speed. Mag or RARE can roll this.
+ItemDisplay[7tw (MAG OR RARE OR UNI OR SET)]:%NAME%
+
+//Paladin Shields//
+
+//ELT paladin shields ONLY// Will only show 0socket, 3os, 4os, and 29 all res or higher. Hides ETH, still shows Uniques and Sets. Hides all rares and blues.
+ItemDisplay[ELT CL3 !ETH NMAG RES>28 (SOCK=0 OR SOCK=3 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[ELT CL3 (SET OR UNI)]: %NAME%
+ItemDisplay[ELT CL3]:
+
+//Amazon Bows//
+
+//Matriarchal Bow// Shows 0 or 4 socket with +2bow and crossbow skills (ETH/nonETH, but bows dont drop ETH). Shows uniques and sets, hides all rares and blues.
+ItemDisplay[amb NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[amb (SET OR UNI)]: %NAME%
+ItemDisplay[amb (RARE OR MAG)]:
+
+//Grand Matron Bow// Shows 0 or 4 socket with +2bow and crossbow skills (ETH/nonETH, but bows dont drop ETH). Shows uniques and sets, hides all rares and blues.
+ItemDisplay[amc NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[amc (SET OR UNI)]: %NAME%
+ItemDisplay[amc (RARE OR MAG)]:
+
+//Staffs//
+
+//Staffs// - Memory bases - Displays all staffs excluding the staffs that cannot roll 4 sockets & with only >1 to ES. Shows 0 or 4 socket eth/white. Shows uniques, sets, hides all rares and blues.
+ItemDisplay[WP11 !sst !lst !8ss !8ls !6ss !6ls NMAG SK58>1 (SOCK=0 OR SOCK=4)]: %PURPLE% %NAME% [%SOCKETS%]
+ItemDisplay[WP11 (SET OR UNI)]: %NAME%
+ItemDisplay[WP11 (RARE OR MAG)]:
+
+//Elder// - Displays eth/white with 0 or 4 socket. Shows eth/noneth set or uni. Hides all rares and blues.
+ItemDisplay[6cs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[6cs NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[6cs (SET OR UNI)]: %NAME%
+ItemDisplay[6cs (RARE OR MAG)]:
+
+//Shillelah// - Displays eth/white with 0 or 4 socket. Shows eth/noneth set or uni. Hides all rares and blues.
+ItemDisplay[6bs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[6bs NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[6bs (SET OR UNI)]: %NAME%
+ItemDisplay[6bs (RARE OR MAG)]:
+
+//Archon Staff// - Displays eth/white with 0 or 4 socket. Shows eth/noneth set or uni. Hides all rares and blues.
+ItemDisplay[6ws ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[6ws NMAG (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[6ws (SET OR UNI)]: %NAME%
+ItemDisplay[6ws (RARE OR MAG)]:
+
+//Rings// Removes all blue rings
+ItemDisplay[rin MAG]:
+
+//Amulets// Removes all blue amulets
+ItemDisplay[amu MAG]:
+
+//jewels// - Displays blue,rare,unique jewels
+ItemDisplay[jew (UNI OR MAG OR RARE)]: %NAME%
+
+//Arrows&Quivers// - Displays rares only
+ItemDisplay[aq2 (RARE OR UNI OR SET)]:%NAME%
+ItemDisplay[aq2]:
+ItemDisplay[cq2 (RARE OR UNI OR SET)]:%NAME%
+ItemDisplay[cq2]:
+
+//Uber items// - Shortens key names and displays which act they came from.
+ItemDisplay[pk1]:Terror (A1)
+ItemDisplay[pk2]:Hate (A2)
+ItemDisplay[pk3]:Destruction (A5)
+
+//Dust (Respect)// - Shortens dust name and displays which boss they came from.
+ItemDisplay[tes]:Suffering [Andy]
+ItemDisplay[ceh]:Hatred [Meph]
+ItemDisplay[bet]:Terror [Diablo]
+ItemDisplay[fed]:Destruction [Baal]
+
+//Cows// - Shows leg
+ItemDisplay[leg]:%NAME%
+
+//Hide all armor that is grey, white, magical, rare. still shows uni and set items (eth/noneth) (All armor meaning helm, body, shields, gloves, boots, belts, circlets)
+ItemDisplay[ARMOR (SET OR UNI)]: %NAME%
+ItemDisplay[ARMOR (NMAG OR MAG OR RARE)]:
+
+//Hide all weapons that is grey,white, magical, and rare. still shows uni and set items (eth/noneth)
+ItemDisplay[WEAPON (SET OR UNI)]:%NAME%
+ItemDisplay[WEAPON (NMAG OR MAG OR RARE)]:
