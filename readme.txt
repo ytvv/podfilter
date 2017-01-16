@@ -5,7 +5,7 @@ Please contact me if I am missing good bases or if you have any ideas to improve
 
 Loot filter was created for end game in mind.
 
-Hides all grey, white, blue, rare items, but displays the one listed in filter.
+Hides all grey, white, blue, rare items, but displays the ones listed in filter.
 We only want the best possible bases.
 
 Overview of what this filter hides and displays :
