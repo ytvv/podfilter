@@ -1,3 +1,8 @@
+Please contact me if I am missing good bases or if you have any ideas to improve the filter.
+
+//discord : ytv#5924
+//reddit : /u/ytvvvv
+
 Loot filter was created for end game in mind.
 
 Hides all grey, white, blue, rare items, but displays the one listed in filter.
