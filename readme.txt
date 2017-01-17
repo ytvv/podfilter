@@ -22,7 +22,7 @@ Overview of what this filter hides and displays :
 *Displays health pots and mana pots tier 1-3. Hides tier 4 pots. Displays tier 5 pot.
 *Hides all Skulls
 *Displays all small charms with ilvl in name
-*Hides all large charms excluding ilvl99. (reason we want to see torch drop)
+*Hides all large charms excluding ilvl99. Torch is ilvl99, so we will still be able to see torch drop.
 *Displays all grand charms with ilvl in name
 *Displays all runes.
 
