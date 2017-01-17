@@ -46,7 +46,7 @@ Overview of what this filter hides and displays :
 
 *Displays rare circlets, hides white, magical.
 *Displays rare druid pelts. Displays non eth with 0,2,and 3 sockets. Hides eth, and magical.
-*Displays rare barb helms. Hides white, magical.
+*Displays rare barb helms. Displays eth/white 0,2,and 3 sockets. Will display if helm is eth or not. Hides magical.
 *Displays Greater Talons magical and rare. Hides white.
 *Displays Runic Talons magical and rare. Hides white.
 *Displays ELT pally shields with res>28 with 0,3,and 4 socket exlcudes ETH. Hides rares and magical.
