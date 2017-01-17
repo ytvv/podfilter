@@ -126,36 +126,36 @@ ItemDisplay[r33]:%ORANGE%*%RED%ZOD[33]
 ItemDisplay[fla ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[fla NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[fla (SET OR UNI)]: %NAME%
-ItemDisplay[fla (RARE OR MAG OR NMAG)]:
+ItemDisplay[fla NMAG)]:
 
 //Spirit - crystal sword - shows 0,4,5 socket eth/white. Shows uni / set eth/noneth. Hides RARE and MAG
 ItemDisplay[crs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[crs NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[crs (SET OR UNI)]: %NAME%
-ItemDisplay[crs (RARE OR MAG OR NMAG)]:
+ItemDisplay[crs NMAG]:
 
 //Spirit - monarch - Will show 0,4 socket eth/noneth. Displays set and uni eth/noneth. Hides RARE and MAG.
 ItemDisplay[uit !ETH NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[uit (SET OR UNI)]: %NAME%
-ItemDisplay[uit (RARE OR MAG OR NMAG)]:
+ItemDisplay[uit NMAG]:
 
 //ONLY ELT polearms - Shows 0,4,5 socket eth/white. Shows set or uni eth/noneth. Hides RARE and MAG.
 ItemDisplay[ELT WP8 ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[ELT WP8 NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[ELT WP8 (SET OR UNI)]: %NAME%
-ItemDisplay[ELT WP8 (RARE OR MAG OR NMAG)]:
+ItemDisplay[ELT WP8 NMAG]:
 
 //Doom/Grief/Breath of the Dying/Beast/LastWish - Berserker Axe - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides all RARE and MAG.
 ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[7wa (SET OR UNI)]: %NAME%
-ItemDisplay[7wa (RARE OR MAG OR NMAG)]:
+ItemDisplay[7wa NMAG]:
 
 //Breath of the Dying/LastWish/Grief - PhaseBlade - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides RARE and MAG
 ItemDisplay[7cr ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[7cr NMAG (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[7cr (SET OR UNI)]: %NAME%
-ItemDisplay[7cr (RARE OR MAG OR NMAG)]:
+ItemDisplay[7cr NMAG]:
 
 
 /////RuneWords *END*//////
@@ -164,19 +164,19 @@ ItemDisplay[7cr (RARE OR MAG OR NMAG)]:
 ItemDisplay[uui ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[uui NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[uui (SET OR UNI)]: %NAME%
-ItemDisplay[uui (RARE OR MAG OR NMAG)]:
+ItemDisplay[uui NMAG]:
 
 //Archon Plate - Will only show 4 open sockets & 0 sockets. Hides 1-3 sockets. Still Shows ETH, SET, AND UNI. Hides all rares and blues.
 ItemDisplay[utp ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[utp NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[utp (SET OR UNI)]: %NAME%
-ItemDisplay[utp (RARE OR MAG OR NMAG)]:
-
+ItemDisplay[utp NMAG]:
+ 
 //Mage Plate - Will only show 3os & 0 sockets. Hides 1-3 sockets. Still Shows ETH, SET, AND UNI. Hides all rares and blues.
 ItemDisplay[xtp ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[xtp NMAG (SOCK=0 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[xtp (SET OR UNI)]: %NAME%
-ItemDisplay[xtp (RARE OR MAG OR NMAG)]:
+ItemDisplay[xtp NMAG]:
 
 //Helms//
 
@@ -212,7 +212,7 @@ ItemDisplay[7tw NMAG]:
 //ELT paladin shields ONLY// Will only show 0socket, 3os, 4os, and 29 all res or higher. Hides ETH, still shows Uniques and Sets. Hides all rares and blues.
 ItemDisplay[ELT CL3 !ETH NMAG RES>28 (SOCK=0 OR SOCK=3 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[ELT CL3 (SET OR UNI)]: %NAME%
-ItemDisplay[ELT CL3 (NMAG OR MAG OR RARE)]:
+ItemDisplay[ELT CL3 NMAG]:
 
 //Amazon Bows//
 
@@ -231,31 +231,25 @@ ItemDisplay[amc (RARE OR MAG OR NMAG)]:
 //Staffs// - Memory bases - Displays all staffs excluding the staffs that cannot roll 4 sockets & with only >1 to ES. Shows 0 or 4 socket eth/white. Shows uniques, sets, hides all rares and blues.
 ItemDisplay[WP11 !sst !lst !8ss !8ls !6ss !6ls NMAG SK58>1 (SOCK=0 OR SOCK=4)]: %PURPLE% %NAME% [%SOCKETS%]
 ItemDisplay[WP11 (SET OR UNI)]: %NAME%
-ItemDisplay[WP11 !6cs !6bs !6ws (RARE OR MAG OR NMAG)]:
+ItemDisplay[WP11 NMAG]: %NAME%
 
 //Elder// - Displays eth/white with 0 or 4 socket. Shows eth/noneth set or uni. Hides all rares and blues.
 ItemDisplay[6cs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[6cs NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[6cs (SET OR UNI)]: %NAME%
-ItemDisplay[6cs (RARE OR MAG OR NMAG)]:
+ItemDisplay[6cs NMAG]:
 
 //Shillelah// - Displays eth/white with 0 or 4 socket. Shows eth/noneth set or uni. Hides all rares and blues.
 ItemDisplay[6bs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[6bs NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[6bs (SET OR UNI)]: %NAME%
-ItemDisplay[6bs (RARE OR MAG OR NMAG)]:
+ItemDisplay[6bs NMAG]:
 
 //Archon Staff// - Displays eth/white with 0 or 4 socket. Shows eth/noneth set or uni. Hides all rares and blues.
 ItemDisplay[6ws ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[6ws NMAG (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[6ws (SET OR UNI)]: %NAME%
-ItemDisplay[6ws (RARE OR MAG OR NMAG)]:
-
-//Rings// Removes all blue rings
-ItemDisplay[rin MAG]:
-
-//Amulets// Removes all blue amulets
-ItemDisplay[amu MAG]:
+ItemDisplay[6ws NMAG]:
 
 //jewels// - Displays blue,rare,unique jewels
 ItemDisplay[jew (UNI OR MAG OR RARE)]: %NAME%
