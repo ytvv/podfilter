@@ -182,7 +182,9 @@ ItemDisplay[EQ7 (RARE OR UNI OR SET)]:%NAME%
 ItemDisplay[CL1 !ETH NMAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[CL1 (RARE OR UNI OR SET)]:%NAME%
 
-//Barbarian helmets// -Shows only RARE, SET, AND UNIQUE
+//Barbarian helmets// - eth and white bases with 0,2, or 3 socket.Shows only RARE, SET, AND UNIQUE
+ItemDisplay[CL2 ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=2 SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[CL2 NMAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[CL2 (RARE OR UNI OR SET)]:%NAME%
 
 //Class Specific Weapons//
