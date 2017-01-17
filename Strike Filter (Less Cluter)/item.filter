@@ -1,11 +1,11 @@
-//created by ytv
+﻿//created by ytv
 //verison Strike 1.0.0 (less clutter filter)
 //discord : ytv#5924
 //reddit : /u/ytvvvv
 
 **Not tested in hero editor. Could be conflicts with some items need to test**
 
-Idea behind this filter is to bring out the good base items with colors etc and still showing all the junk. This filter in theory should not hide anything in the game, but needs to be tested.
+Idea behind this filter is to bring out the good base items with colors, and hiding minimal junk. feels bad when there is nothing dropping.
 
 //Hide Gold Piles (<) 2000
 ItemDisplay[GOLD<2000]:
@@ -122,30 +122,30 @@ ItemDisplay[r33]:%ORANGE%*%RED%ZOD[33]
 
 /////RuneWords *START*//////
 
-//HOTO//CTA = flail = Shows 0,4,5 eth/white flails. Shows SET and UNI eth/noneth. Hides RARE and MAG.
+//HOTO//CTA = flail = Shows 0,4,5 eth/white flails. Shows SET and UNI eth/noneth.
 ItemDisplay[fla ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[fla NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[fla (SET OR UNI)]: %NAME%
 ItemDisplay[fla NMAG)]:
 
-//Spirit - crystal sword - shows 0,4,5 socket eth/white. Shows uni / set eth/noneth. Hides RARE and MAG
+//Spirit - crystal sword - shows 0,4,5 socket eth/white. Shows uni / set eth/noneth. 
 ItemDisplay[crs ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[crs NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[crs (SET OR UNI)]: %NAME%
 ItemDisplay[crs NMAG]:
 
-//Spirit - monarch - Will show 0,4 socket eth/noneth. Displays set and uni eth/noneth. Hides RARE and MAG.
+//Spirit - monarch - Will show 0,4 socket eth/noneth. Displays set and uni eth/noneth.
 ItemDisplay[uit !ETH NMAG (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[uit (SET OR UNI)]: %NAME%
 ItemDisplay[uit NMAG]:
 
-//ONLY ELT polearms - Shows 0,4,5 socket eth/white. Shows set or uni eth/noneth. Hides RARE and MAG.
+//ONLY ELT polearms - Shows 0,4,5 socket eth/white. Shows set or uni eth/noneth. 
 ItemDisplay[ELT WP8 ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[ELT WP8 NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[ELT WP8 (SET OR UNI)]: %NAME%
 ItemDisplay[ELT WP8 NMAG]:
 
-//Doom/Grief/Breath of the Dying/Beast/LastWish - Berserker Axe - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides all RARE and MAG.
+//Doom/Grief/Breath of the Dying/Beast/LastWish - Berserker Axe - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth.
 ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[7wa (SET OR UNI)]: %NAME%
