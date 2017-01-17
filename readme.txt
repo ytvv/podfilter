@@ -111,32 +111,24 @@ so ideally we can do something like this :
 
 ItemDisplay[CL1 !ETH NMAG (SK245>0 OR SK250>0 OR SK226>0) (SOCK=0 OR SOCK=2 OR SOCK=3)]:.. Not sure if this would work. ideally this code represents.. show me any pelt that is white only (hide eths) with skills tornado, or hurricane, or oak sage greater than 0, and it must have either sockets 0,2,3.
 
+ItemDisplay[CL1 !ETH NMAG (SK245>0 OR SK250>0 OR SK226>0) (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME%
+ItemDisplay[CL1 (RARE OR UNI OR SET)]:%NAME%
 
-///////////////////////////////////////////////
-//////grand matron bows & Matriarchal Bow//////
-///////////////////////////////////////////////
+The above code works (tested in hero editor), we simply just need to add all the skills that we want to see on pelts. If the skill is not listed the pelt will not be displayed.
 
-Current code:
+For example let's say we have a white pelt with no stats or skills & it is 0 socket.
+The pelt agrees that it is a NMAG item, but it does not have the stats that line is requesting, the pelt does agree it is 0 socket.
+Next line stats are you a rare uni or set? The pelt disagrees.
 
-//Matriarchal Bow// Shows 0 or 4 socket with +2bow and crossbow skills (ETH/nonETH, but bows dont drop ETH). Shows uniques and sets, hides all rares and blues.
-ItemDisplay[amb NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
-ItemDisplay[amb (SET OR UNI)]: %NAME%
-ItemDisplay[amb (RARE OR MAG)]:
+And near the bottom of the filter we have :
 
-//Grand Matron Bow// Shows 0 or 4 socket with +2bow and crossbow skills (ETH/nonETH, but bows dont drop ETH). Shows uniques and sets, hides all rares and blues.
-ItemDisplay[amc NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
-ItemDisplay[amc (SET OR UNI)]: %NAME%
-ItemDisplay[amc (RARE OR MAG)]:
+//Hide all armor that is grey, white, magical, rare. still shows uni and set items (eth/noneth) (All armor meaning helm, body, shields, gloves, boots, belts, circlets)
+ItemDisplay[ARMOR (SET OR UNI)]: %NAME%
+ItemDisplay[ARMOR (NMAG OR MAG OR RARE)]:
 
-Problem : using wrong code?
+The filter asks again to the pelt. are you set or uni? No the pelt isn't. Disagress.
+Next line states are you nmag, mag and rare? Yes, I am a white pelt (nmag) lists as nothing which will hide the pelt.
 
-Below is what is mentioned to use. Says to use CLSK code. CLSK0 is amazon.
+So in theory if we have a white pelt with stats that are not listed it will hide the item. We need to ADD all skills that are possible on druid pelts (for white bases only rares doesnt matter)
 
-Class Skills
-
-Find the number of the class from this page: class list; next, append that number to "CLSK". This will match grand matron bows with +2/+3 to amazon skills (class number 0 from the list):
-
-ItemDisplay[amc CLSK0>1]: ...
-
-Have to further test bows. I thought class skills is +2 amazon and tab skills is +2 amazon bow skills..
-Ingame shows bow and cross skills is a skill tab, so I'm sure that TABSK is the correct method to use.
+At the moment I left the druid pelt selection alone. It will display pelts with any stats on white items. Hides ETH white base pelts. Shows white, and rare.
