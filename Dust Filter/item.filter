@@ -141,14 +141,12 @@ ItemDisplay[ELT WP8 NMAG (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DGREEN% %NAME% [%SOCKET
 ItemDisplay[ELT WP8 (SET OR UNI)]: %NAME%
 ItemDisplay[ELT WP8 (RARE OR MAG)]:
 
-//Doom/Grief/Breath of the Dying/Beast/LastWish - Berserker Axe - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides all RARE and MAG.
-ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
-ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR OR SOCK=4 SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=4 SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[7wa (SET OR UNI)]: %NAME%
 ItemDisplay[7wa (RARE OR MAG)]:
 
-//Breath of the Dying/LastWish/Grief - PhaseBlade - Shows 0,5,6 socket eth/white. Shows set or uni eth/noneth. Hides RARE and MAG
-ItemDisplay[7cr ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[7cr ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[7cr NMAG (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[7cr (SET OR UNI)]: %NAME%
 ItemDisplay[7cr (RARE OR MAG)]:

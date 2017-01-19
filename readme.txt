@@ -34,9 +34,9 @@ Overview of what this filter hides and displays :
 
 *Displays all ELT polearms with 0,4,5. Will display if it is eth or not. Example, eth thresher with 4socket will come up as "Thresher [4] [eth]"
 
-*Displays Berserker Axe with 0,5,6 sockets. Will display if it is eth or not. Example, eth Berserker Axe with 4 socket will come up as "Berserker Axe [4] [eth]"
+*Displays Berserker Axe with 0,4,5,6 sockets. Will display if it is eth or not. Example, eth Berserker Axe with 4 socket will come up as "Berserker Axe [4] [eth]"
 
-*Displays Phase blade with 0,5,6 sockets. Will display if it is eth or not. Example, eth phase blade with 4 socket will come up as "Phase Blade [4] [eth]"
+*Displays Phase blade with 0,4,5,6 sockets. Will display if it is eth or not. Example, eth phase blade with 4 socket will come up as "Phase Blade [4] [eth]"
 
 *Displays Dusk Shroud with 0, or 4 sockets. Will display if it is eth or not. Example, eth dusk shroud with 0 socket will come up as "Dusk Shroud [0] [eth]"
 
