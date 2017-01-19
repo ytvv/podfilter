@@ -217,6 +217,8 @@ ItemDisplay[amc NMAG TABSK0>1 (SOCK=0 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[amc (SET OR UNI)]: %NAME%
 ItemDisplay[amc (RARE OR MAG)]:
 
+//Class Specific Weapons *END*//
+
 //Staffs//
 
 //Staffs// - Memory bases - Displays all staffs excluding the staffs that cannot roll 4 sockets & with only >1 to ES. Shows 0 or 4 socket eth/white. Shows uniques, sets, hides all rares and blues.
