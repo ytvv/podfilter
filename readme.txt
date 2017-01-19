@@ -49,7 +49,7 @@ Overview of what this filter hides and displays :
 *Displays rare barb helms. Displays eth/white 0,2,and 3 sockets. Will display if helm is eth or not. Hides magical.
 *Displays Greater Talons magical and rare. Hides white.
 *Displays Runic Talons magical and rare. Hides white.
-*Displays ELT pally shields with res>28 with 0,3,and 4 socket exlcudes ETH. Hides rares and magical.
+*Displays ELT pally shields (eth/noneth) with res>28 with 0,3,and 4 socket. Hides rares and magical.
 *Displays Matriarchal Bow with >1 +bow & cross bow skills with 0,or 4 sockets. Hides rares and magical.
 *Displays Grand Matron Bow with >1 +bow and cross bow skills with 0, or 4 sockets. Hides rares and magical.
 *Displays all staffs excluding the staffs that cannot roll 4 sockets & with only >1 to ES. Shows 0 or 4 socket eth/white. Hides all rares and blues.

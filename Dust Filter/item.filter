@@ -1,5 +1,5 @@
 ﻿//created by ytv
-//verison Dust 1.0.1
+//verison Dust 1.0.2
 //discord : ytv#5924
 //reddit : /u/ytvvvv
 
@@ -201,10 +201,10 @@ ItemDisplay[7tw (MAG OR RARE OR UNI OR SET)]:%NAME%
 
 //Paladin Shields//
 
-//ELT paladin shields ONLY// Will only show 0socket, 3os, 4os, and 29 all res or higher. Hides ETH, still shows Uniques and Sets. Hides all rares and blues.
-ItemDisplay[ELT CL3 !ETH NMAG RES>28 (SOCK=0 OR SOCK=3 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
+//ELT paladin shields ONLY// Will only show (eth/noneth) 0socket, 3os, 4os, and 29 all res or higher. Shows Uniques and Sets. Hides all rares and blues.
+ItemDisplay[ELT CL3 ETH !UNI !SET !RARE !MAG RES>28 (SOCK=0 OR SOCK=3 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[ELT CL3 NMAG RES>28 (SOCK=0 OR SOCK=3 OR SOCK=4)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[ELT CL3 (SET OR UNI)]: %NAME%
-ItemDisplay[ELT CL3]:
 
 //Amazon Bows//
 
