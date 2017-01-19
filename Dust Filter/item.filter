@@ -1,5 +1,5 @@
 ﻿//created by ytv
-//verison Dust 1.0.0
+//verison Dust 1.0.1
 //discord : ytv#5924
 //reddit : /u/ytvvvv
 
@@ -58,12 +58,12 @@ ItemDisplay[mp3]:%BLUE%*%WHITE%M3
 ItemDisplay[mp4]:
 ItemDisplay[mp5]:%BLUE%*%WHITE%M5
 
-//Skulls - hides all skulls (I dont know any reason to pick up skulls)
+//Skulls - Displays Flawless skulls only
 ItemDisplay[skc]:
 ItemDisplay[skf]:
 ItemDisplay[sku]:
-ItemDisplay[skl]:
-ItemDisplay[skz]:
+ItemDisplay[skl]: %NAME%
+ItemDisplay[skz]: %NAME%
 
 //SmallCharms - displays ILVL for all small charms
 ItemDisplay[cm1]: %NAME% {L%ILVL%}
@@ -176,8 +176,9 @@ ItemDisplay[xtp (RARE OR MAG)]:
 
 //Helms//
 
-//Circlets// - Shows only RARE, SET, AND UNIQUE
+//Circlets// - Shows only RARE, SET, AND UNIQUE. Displays white Diadem's.
 ItemDisplay[EQ7 (RARE OR UNI OR SET)]:%NAME%
+ItemDisplay[ci3 NMAG (SOCK=0)]:%NAME% [L%ILVL%]
 
 //Druid Pelt// -Shows non-eth 0, 2, or 3 socket. Displays RARE, SET, UNIQUE.
 ItemDisplay[CL1 !ETH NMAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
