@@ -20,7 +20,7 @@ Overview of what this filter hides and displays :
 *Hides all ears
 *Displays all flawless gems with a shorten name. Displays all other tier of gems as the normal name with the normal color.
 *Displays health pots and mana pots tier 1-3. Hides tier 4 pots. Displays tier 5 pot.
-*Hides all Skulls
+*Displays Perfect and Flawless skulls for rerolling. Hides the rest of the skulls.
 *Displays all small charms with ilvl in name
 *Hides all large charms excluding ilvl99. Torch is ilvl99, so we will still be able to see torch drop.
 *Displays all grand charms with ilvl in name
@@ -44,7 +44,7 @@ Overview of what this filter hides and displays :
 
 *Displays Mage Plate with 0, or 3 sockets. Will display if it is eth or not. Example, eht mage plate with 3 socket will come up as "Mage plate [3] [eth]"
 
-*Displays rare circlets, hides white, magical.
+*Displays rare circlets, hides white, magical. Updated to display white & eth diadems.
 *Displays rare druid pelts. Displays non eth with 0,2,and 3 sockets. Hides eth, and magical.
 *Displays rare barb helms. Displays eth/white 0,2,and 3 sockets. Will display if helm is eth or not. Hides magical.
 *Displays Greater Talons magical and rare. Hides white.
