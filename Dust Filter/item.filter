@@ -1,5 +1,5 @@
-﻿//created by ytv
-//verison Dust 1.0.2
+//created by ytv
+//verison Dust 1.0.3
 //discord : ytv#5924
 //reddit : /u/ytvvvv
 
@@ -142,8 +142,8 @@ ItemDisplay[ELT WP8 (SET OR UNI)]: %NAME%
 ItemDisplay[ELT WP8 (RARE OR MAG)]:
 
 //Doom/Grief/Breath of the Dying/Beast/LastWish/hand of justice - Berserker Axe - Shows 0,4,5,6 socket eth/white. Shows set or uni eth/noneth. Hides all RARE and MAG.
-ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR OR SOCK=4 SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
-ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=4 SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
+ItemDisplay[7wa ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[7wa NMAG (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[7wa (SET OR UNI)]: %NAME%
 ItemDisplay[7wa (RARE OR MAG)]:
 
@@ -185,7 +185,7 @@ ItemDisplay[CL1 !ETH NMAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKE
 ItemDisplay[CL1 (RARE OR UNI OR SET)]:%NAME%
 
 //Barbarian helmets// - eth and white bases with 0,2, or 3 socket.Shows only RARE, SET, AND UNIQUE
-ItemDisplay[CL2 ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=2 SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
+ItemDisplay[CL2 ETH !UNI !SET !RARE !MAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%] [ETH]
 ItemDisplay[CL2 NMAG (SOCK=0 OR SOCK=2 OR SOCK=3)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[CL2 (RARE OR UNI OR SET)]:%NAME%
 
