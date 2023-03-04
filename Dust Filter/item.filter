@@ -1,5 +1,5 @@
 //created by ytv
-//verison Dust 1.0.3
+//verison Dust 1.0.4
 //discord : ytv#5924
 //reddit : /u/ytvvvv
 
@@ -66,10 +66,12 @@ ItemDisplay[skl]: %NAME%
 ItemDisplay[skz]: %NAME%
 
 //SmallCharms - displays ILVL for all small charms
-ItemDisplay[cm1]: %NAME% {L%ILVL%}
+ItemDisplay[cm1 !UNI]: %NAME% {L%ILVL%}
+ItemDisplay[cm1 UNI]: %RED%%NAME%
 
 //LargeCharms - hides large charms unless it is ilvl 99, so that you can see torch
 ItemDisplay[cm2 ILVL=99]: %NAME% {L%ILVL%}
+ItemDisplay[cm2 UNI]: %NAME%
 ItemDisplay[cm2]:
 
 //GrandCharms - displays ILVL for all grand charm
@@ -85,35 +87,35 @@ ItemDisplay[r06]:%ORANGE%*%WHITE%ITH[6]
 ItemDisplay[r07]:%ORANGE%*%WHITE%TAL[7]
 ItemDisplay[r08]:%ORANGE%*%WHITE%RAL[8]
 ItemDisplay[r09]:%ORANGE%*%WHITE%ORT[8]
-ItemDisplay[r10]:%ORANGE%*%WHITE%THUL[10]
-ItemDisplay[r11]:%ORANGE%*%WHITE%AMN[11]
+ItemDisplay[r10]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%WHITE%THUL[10]
+ItemDisplay[r11]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%WHITE%AMN[11]
 ItemDisplay[r13]:%ORANGE%*%WHITE%SHAEL[13]
 
 //Runes Mid Tier - displays mid tier runes in orange with * then the rune name
-ItemDisplay[r12]:%ORANGE%*SOL[12]
+ItemDisplay[r12]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*SOL[12]
 ItemDisplay[r14]:%ORANGE%*DOL[14]
 ItemDisplay[r15]:%ORANGE%*HEL[15]
 ItemDisplay[r16]:%ORANGE%*IO[16]
-ItemDisplay[r17]:%ORANGE%*LUM[17]
-ItemDisplay[r18]:%ORANGE%*KO[18]
-ItemDisplay[r19]:%ORANGE%*FAL[19]
-ItemDisplay[r20]:%ORANGE%*LEM[20]
-ItemDisplay[r21]:%ORANGE%*PUL[21]
-ItemDisplay[r22]:%ORANGE%*UM[22]
+ItemDisplay[r17]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*LUM[17]
+ItemDisplay[r18]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*KO[18]
+ItemDisplay[r19]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*FAL[19]
+ItemDisplay[r20]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*LEM[20]
+ItemDisplay[r21]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*[][][][][]PUL[][][][][][21]
+ItemDisplay[r22]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*[][][][][]UM[][][][][][22]
 
 //Runes High Tier - Displays all high tier runes with organge dot and then red text for the rune name. keep in mind MAL, GUL, IST are not HRS. You can get them from the hellforge.
 
-ItemDisplay[r23]:%ORANGE%*%RED%MAL[23]
-ItemDisplay[r24]:%ORANGE%*%RED%IST[24]
-ItemDisplay[r25]:%ORANGE%*%RED%GUL[25]
-ItemDisplay[r26]:%ORANGE%*%RED%VEX[26]
-ItemDisplay[r27]:%ORANGE%*%RED%OHM[27]
-ItemDisplay[r28]:%ORANGE%*%RED%LO[28]
-ItemDisplay[r29]:%ORANGE%*%RED%SUR[29]
-ItemDisplay[r30]:%ORANGE%*%RED%BER[30]
-ItemDisplay[r31]:%ORANGE%*%RED%JAH[31]
-ItemDisplay[r32]:%ORANGE%*%RED%CHAM[32]
-ItemDisplay[r33]:%ORANGE%*%RED%ZOD[33]
+ItemDisplay[r23]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][][][][]MAL[][]][][][23]
+ItemDisplay[r24]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]IST[][]][][][24]
+ItemDisplay[r25]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]GUL[][]][][][25]
+ItemDisplay[r26]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]VEX[][]][][][26]
+ItemDisplay[r27]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]OHM[][]][][][27]
+ItemDisplay[r28]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]LO[][]][][][28]
+ItemDisplay[r29]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]SUR[][]][][][29]
+ItemDisplay[r30]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]BER[][]][][][30]
+ItemDisplay[r31]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]JAH[][]][][][31]
+ItemDisplay[r32]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]CHAM[][]][][][32]
+ItemDisplay[r33]:%MAP-80%%ICON-0%%NOTIFY-PURPLE%%ORANGE%*%RED%[][]][][]ZOD[][]][][][33]
 
 
 /////RuneWords *START*//////
@@ -245,14 +247,19 @@ ItemDisplay[6ws NMAG (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN% %NAME% [%SOCKETS%]
 ItemDisplay[6ws (SET OR UNI)]: %NAME%
 ItemDisplay[6ws (RARE OR MAG)]:
 
-//Rings// Removes all blue rings
+//Rings// Removes all blue rings. Shows Rare and Unique rings.
 ItemDisplay[rin MAG]:
+ItemDisplay[rin !ID UNI]: %RED%[][][][][][]%NAME%[][][][][][]
+ItemDisplay[rin RARE]: %NAME%
 
-//Amulets// Removes all blue amulets
+//Amulets// Removes all blue amulets. Shows Rare and Unique amulets.
 ItemDisplay[amu MAG]:
+ItemDisplay[amu !ID UNI]: %RED%[][][][][][]%NAME%[][][][][][]
+ItemDisplay[amu RARE]: %NAME%
 
 //jewels// - Displays blue,rare,unique jewels
-ItemDisplay[jew (UNI OR MAG OR RARE)]: %NAME%
+ItemDisplay[jew (MAG OR RARE)]: %NAME%
+ItemDisplay[jew UNI]: %RED%[][][][][][]%NAME%[][][][][][]
 
 //Arrows&Quivers// - Displays rares only
 ItemDisplay[aq2 (RARE OR UNI OR SET)]:%NAME%
